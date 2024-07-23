@@ -1,0 +1,93 @@
+.on-sale-products {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.products-title {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.line {
+  position: relative;
+  width: 100%;
+  display: block;
+  background-color: #ededed;
+  height: 2px;
+  margin-bottom: 20px;
+}
+.line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30%;
+  background-color: #ffc107;
+  height: 2px;
+}
+
+.on-sale-products .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+.on-sale-products .product {
+  position: relative;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  overflow: hidden;
+}
+.on-sale-products .product:hover {
+  color: black;
+}
+.on-sale-products .product > span {
+  position: absolute;
+  background-color: #f44336;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+  top: 20px;
+  right: 10px;
+  z-index: 2;
+}
+.on-sale-products .product img {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.on-sale-products .product p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.on-sale-products .product > div {
+  margin: 0 auto 10px;
+}
+.on-sale-products .product .product-price span {
+  color: #ffc107;
+  margin-right: 10px;
+}
+.on-sale-products .product .product-price del {
+}
+
+.on-sale-products ul {
+  position: absolute;
+  right: -100%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s;
+}
+.on-sale-products .product:hover ul {
+  right: 10px;
+}
+.on-sale-products ul li {
+  margin: 30px 0;
+  background-color: #dfd9d9;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.on-sale-products ul li:hover {
+  background: radial-gradient(#332, transparent);
+}

@@ -1,0 +1,32 @@
+.checkout {
+  display: flex;
+  min-height: calc(100vh - 60px);
+}
+
+.checkout-ad {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+.checkout-left {
+}
+.checkout-left > div {
+  padding: 0 15px;
+}
+.checkout-title {
+  margin-right: 15px;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+.empty-basket {
+  text-align: center;
+  margin-top: 30px;
+}
+.basket-img {
+  max-width: 300px;
+}
+
+@media (max-width: 992px) {
+  .checkout {
+    flex-direction: column;
+  }
+}

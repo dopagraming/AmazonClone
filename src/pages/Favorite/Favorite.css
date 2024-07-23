@@ -1,0 +1,33 @@
+.favorite-products-p {
+  padding: 40px 20px;
+  min-height: calc(100vh - 60px);
+}
+.favorite-products {
+  margin: 0 auto;
+  padding: 20px;
+}
+.favorite-products h1 {
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+.favorite-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+.empty {
+  width: 100%;
+  margin: 20px auto 0;
+  text-align: center;
+}
+.empty p {
+}
+.empty img {
+  margin-top: 30px;
+  max-width: 300px;
+}
